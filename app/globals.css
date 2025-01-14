@@ -1,0 +1,145 @@
+.header {
+  border-bottom: solid rgb(192, 192, 192) 1px;
+  font-size: 20px;
+  padding: 15px;
+  padding-left: 300px;
+}
+
+.container {
+  padding: 40px;
+  display: flex;
+  gap: 20px;
+  padding-left: 300px;
+}
+
+.item {
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+.item:nth-child(1) {
+  width: 700px;
+}
+
+.item:nth-child(2) {
+  width: 180px;
+  text-align: center;
+  font-size: 15px;
+  cursor : pointer;
+}
+
+.todoIcon {
+  position: absolute;
+  top: 190px;
+  left: 300px;
+  padding: 10px 15px;
+  background-color: rgb(226, 226, 226);
+  border-radius: 20px;
+}
+
+.listFlex {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 30%;
+  left: 295px;
+}
+
+.colContainer {
+  position: relative;
+  top: 60px;
+  width: 390px;
+  padding: 8px 15px;
+  margin: 5px;
+  display: grid;
+  grid-template-columns: 40px 250px;
+  border: 2px solid black;
+  border-radius: 30px;
+}
+
+.check {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 2px solid black;
+  grid-column: 1/2;
+  cursor : pointer;
+}
+
+.do {
+  font-size: 17px;
+  grid-column: 2/3;
+  cursor : pointer;
+}
+
+
+
+
+.detailPage {
+  background-color: rgb(235, 240, 245);
+  position: relative;
+  top: 150px;
+  width: 550px;
+  border-radius: 20px;
+  box-shadow: 2px 3px 4px 1px grey;
+  margin: 0 auto;
+  padding: 20px;
+  padding-bottom: 50px;
+}
+
+
+
+.inputName {
+  background-color: rgb(235, 240, 245);
+  position: relative;
+  top: 10px;
+  left: 10px;
+  height: 25px;
+  font-size: 25px;
+  font-family: '고딕체', sans-serif;
+  font-weight: 700;
+  padding: 10px;
+  border: none; 
+}
+
+.inputMemo {
+  background-color: rgb(235, 240, 245);
+  position: relative;
+  top: 20px;
+  left: 10px;
+  width: 500px;
+  height: 25px;
+  padding: 10px;
+  font-size: 17px;
+  font-family: '고딕체', sans-serif;
+  color: grey;
+  border: none;
+  line-height: 35px;
+}
+
+.closeImage {
+  position: absolute;
+  left: 530px;
+  top: 15px;
+  cursor : pointer;
+}
+
+.deleteImage {
+  position: relative;
+  left: 959px;
+  top: 156px;
+  cursor : pointer;
+}
+
+.correctImage {
+  position: relative;
+  left: 943px;
+  top: 158px;
+  cursor : pointer;
+}
+
+textarea {
+  resize: none;
+}
