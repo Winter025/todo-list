@@ -15,7 +15,7 @@ const AddItem = () => {
 
     
 
-    const addBtn = async () => {
+    const addTodo = async () => {
 		if (work == "") { return; }
 
 		await fetch("api/items",
@@ -29,11 +29,17 @@ const AddItem = () => {
 	}
 
 
+	const handleKeyDown = async (e: React.KeyboardEvent<HTMLElement>) => {
+		if (e.code !== 'Enter') { return; }
+		addTodo();
+	}
+
+
 
     return (
         <div className="container">
-			<input className="item" type="text" value={work} onChange={handleChange} />
-			<button className="item" onClick={addBtn}>+ 추가하기</button>
+			<input className="item" type="text" value={work} onChange={handleChange} onKeyDown={handleKeyDown}/>
+			<button className="item" onClick={addTodo}>+ 추가하기</button>
 		</div>
     )
 }
