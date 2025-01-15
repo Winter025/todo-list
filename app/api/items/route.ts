@@ -52,6 +52,8 @@ export async function GET() {
     const sql = "SELECT * FROM todoList";
     const [rows] = await db.query(sql);
 
+    console.log('rows: ', rows)
+
     
     if (rows != null) {
         return NextResponse.json({ status: 'success', data: rows });
